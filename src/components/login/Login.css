@@ -1,0 +1,9 @@
+.login {
+  display: grid;
+  place-items: center;
+}
+.login > img {
+  width: 100%;
+}
+.login > a {
+}
