@@ -1,9 +1,17 @@
 .login {
   display: grid;
   place-items: center;
+  height: 100vh;
+  background-color: black;
 }
 .login > img {
-  width: 100%;
+  width: 55%;
 }
 .login > a {
+  padding: 2rem;
+  border-radius: 9.9rem;
+  background-color: #1db954;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
 }
