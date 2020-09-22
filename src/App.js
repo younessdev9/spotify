@@ -9,7 +9,7 @@ const spotify = new SpotifyWebApi();
 
 function App() {
   const [token, setToken] = useState(null);
-  const [{}, dispatch] = useDataLayerValue;
+  const [{ user }, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     const hash = getTokenFromResponse();
@@ -28,7 +28,6 @@ function App() {
         });
       });
     }
-    console.log('TOKKKKKKKKEN', token);
   }, [dispatch, token]);
   return (
     <div className="app">{token ? <h1>I'm Mogged in</h1> : <Login />}</div>
